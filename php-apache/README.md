@@ -2,7 +2,7 @@
 
 ### 版本
 
-基于ubuntu:trusty构建
+基于 ubuntu:trusty 构建
 
 ### 说明
 - 构造镜像
@@ -36,7 +36,7 @@
   $USER/apache-php
   ```
   
-  在/your/app/path中新建index.php文件
+- 在/your/app/path中新建index.php文件
   
   ```php
   <?php
@@ -45,12 +45,12 @@
     {
     die('Could not connect: ' . mysql_error());
     } else {
-    echo "mysql connected";
+    echo "mysql connected</br>";
     }
   $db_selected = mysql_select_db("dbname_for_php", $con);
   if (!$db_selected)
     {
-    die ("Can\'t use dbname_for_php : " . mysql_error());
+    die("Can\'t use dbname_for_php : " . mysql_error());
     } else {
     echo "dbname_for_php exits";
     }
@@ -58,3 +58,4 @@
   // some code
   ?>
   ```
+- 访问本地localhost页面查看输出
